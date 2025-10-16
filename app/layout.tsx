@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Inter, STIX_Two_Text } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const stix = STIX_Two_Text({
+  variable: "--font-stix",
   subsets: ["latin"],
 });
 
@@ -25,9 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${stix.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col scroll-smooth`}
       >
-        {children}
+        <Header />
+        <main className="flex-1 pt-[80px] md:pt-[96px]">{children}</main>
+        <Footer />
       </body>
     </html>
   );
