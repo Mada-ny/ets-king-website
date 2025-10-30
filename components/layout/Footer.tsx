@@ -33,12 +33,12 @@ export default function Footer() {
                             </h2>
                         </Link>
                         
-                        <p className="text-sm text-muted-foreground leading-relaxed">
+                        <p className="text-sm text-muted-foreground leading-relaxed font-sans">
                             {COMPANY_INFO.description}
                         </p>
                         
                         <div className="flex items-center gap-2 text-xs font-semibold text-primary">
-                            <div className="px-3 py-1 bg-primary/10 rounded-full">
+                            <div className="px-3 py-1 bg-primary/10 rounded-full font-sans">
                                 Depuis 2010
                             </div>
                         </div>
@@ -49,7 +49,7 @@ export default function Footer() {
                         <h3 className="text-base font-bold font-sans">
                             Nos Services
                         </h3>
-                        <ul className="space-y-2.5">
+                        <ul className="space-y-2.5 font-sans">
                             {mainServices.map((service) => (
                                 <li key={service.id}>
                                     <Link
@@ -66,7 +66,7 @@ export default function Footer() {
                         </ul>
                         <Link 
                             href="/services"
-                            className="text-sm font-semibold text-primary hover:underline inline-block mt-2"
+                            className="text-sm font-sans font-semibold text-primary hover:underline inline-block mt-2"
                         >
                             Voir tous nos services →
                         </Link>
@@ -77,7 +77,7 @@ export default function Footer() {
                         <h3 className="text-base font-bold font-sans">
                             Liens Rapides
                         </h3>
-                        <ul className="space-y-2.5">
+                        <ul className="space-y-2.5 font-sans">
                             {links.map((link) => (
                                 <li key={link.label}>
                                     <Link
@@ -99,7 +99,7 @@ export default function Footer() {
                         </ul>
 
                         {/* Horaires */}
-                        <div className="pt-4 space-y-2">
+                        <div className="pt-4 space-y-2 font-sans">
                             <div className="flex items-center gap-2 text-sm">
                                 <Clock className="size-4 text-primary flex-shrink-0" />
                                 <span className="font-semibold text-foreground">Horaires</span>
@@ -113,7 +113,7 @@ export default function Footer() {
                     </div>
 
                     {/* Colonne 4 : Contact */}
-                    <div className="space-y-4">
+                    <div className="space-y-4 font-sans">
                         <h3 className="text-base font-bold font-sans">
                             Nous Contacter
                         </h3>
@@ -181,7 +181,7 @@ export default function Footer() {
 
                 {/* Séparateur */}
                 <div className="border-t border-border/50 mt-12 pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div className="flex font-sans flex-col md:flex-row justify-between items-center gap-4">
                         {/* Copyright */}
                         <p className="text-xs text-muted-foreground text-center md:text-left">
                             © {currentYear} {COMPANY_INFO.legalName}. Tous droits réservés.

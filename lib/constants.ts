@@ -87,6 +87,21 @@ export const SERVICES = [
         ],
     },
     {
+        id: "securite-electronique",
+        title: "Sécurité Électronique",
+        shortDescription: "Systèmes de vidéosurveillance et sécurité pour entreprises",
+        description: "Installation et maintenance de systèmes de vidéosurveillance professionnels pour sécuriser vos locaux.",
+        icon: Camera,
+        features: [
+        "Caméras de surveillance IP",
+        "Enregistreurs numériques (DVR/NVR)",
+        "Systèmes d'alarme",
+        "Contrôle d'accès",
+        "Maintenance et support",
+        "Accès à distance via smartphone",
+        ],
+    },
+    {
         id: "installation-reseaux",
         title: "Installation Réseaux",
         shortDescription: "Conception et réalisation de réseaux informatiques performants",
@@ -125,21 +140,6 @@ export const SERVICES = [
         "Économie par rapport à un salarié",
         "Disponibilité permanente",
         "Expertise multi-domaines",
-        ],
-    },
-    {
-        id: "securite-electronique",
-        title: "Sécurité Électronique",
-        shortDescription: "Systèmes de vidéosurveillance et sécurité pour entreprises",
-        description: "Installation et maintenance de systèmes de vidéosurveillance professionnels pour sécuriser vos locaux.",
-        icon: Camera,
-        features: [
-        "Caméras de surveillance IP",
-        "Enregistreurs numériques (DVR/NVR)",
-        "Systèmes d'alarme",
-        "Contrôle d'accès",
-        "Maintenance et support",
-        "Accès à distance via smartphone",
         ],
     },
     {
